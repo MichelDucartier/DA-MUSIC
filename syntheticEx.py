@@ -36,7 +36,7 @@ np.random.seed(42)
 #   initialization   #
 #********************#
 
-d = 5   # number of sources
+d = 2   # number of sources
 m = 8   # number of array elements
 snr = 10   # signal to noise ratio
 
@@ -204,4 +204,4 @@ if __name__ == "__main__":
 
     # create_res_cap_dataset('m8/res0.20_l200_snr10_10k', 10000, 0.20)
 
-    create_dataset('m8/d5_l200_snr10_10k_c', 10000, coherent=True)
+    create_dataset('m8/d2_l200_snr10_5k_c', 5000, coherent=True)

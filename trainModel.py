@@ -63,7 +63,7 @@ tf.config.run_functions_eagerly(True)
 #****************************************#
 #   read files (may need to alter path)  #
 #****************************************#
-hf = h5py.File('data/m8/d5_l200_snr10_10k_c.h5', 'r')
+hf = h5py.File('data/m8/d2_l200_snr10_5k_c.h5', 'r')
 
 dataX = np.array(hf.get('X'))
 dataY = np.array(hf.get('Y'))
@@ -170,7 +170,7 @@ if __name__ == "__main__":
 
         model.summary()
         model.compile(loss=LOSS, optimizer=Adam(lr=0.001))
-        checkpoint = ModelCheckpoint(save_best_only=True, filepath='model/deepAugMUSIC_d5.h5',
+        checkpoint = ModelCheckpoint(save_best_only=True, filepath='model/deepAugMUSIC_d2.h5',
                                      save_weights_only=True, verbose=1)
 
         if SPEC:

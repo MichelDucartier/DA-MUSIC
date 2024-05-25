@@ -1,0 +1,4 @@
+data/m8/*
+*.h5
+.ipynb_checkpoints
+__pycache__
